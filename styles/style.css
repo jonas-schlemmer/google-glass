@@ -5,6 +5,10 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
+div#div-interface {
+    width: 800px;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
@@ -55,8 +59,27 @@ nav#nav-menu li {
     background-color: #DDDDDD;
     padding: 10px;
     margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#nav-menu li:hover {
+    background-color: #606060;
 }
 
 nav#nav-menu h1 {
     display: none;
+}
+
+nav#nav-menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#nav-menu a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
 }
