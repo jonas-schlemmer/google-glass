@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @font-face {
     font-family: 'LogoFont';
     src: url(../fonts/bubblegum-sans-regular.otf);
@@ -44,7 +45,7 @@ header h1 {
 }
 
 header h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
     color: #888888;
     padding: 0px;
