@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #DDDDDD;
     color: rgba(0, 0, 0, 1);
 }
@@ -23,19 +24,28 @@ p {
     text-indent: 50px;
 }
 
-header img#icon {
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#main-header img#icon {
     position: absolute;
     left: 780px;
     top: 70px;
 }
 
-header {
+header#main-header {
     border-bottom: 1px #606060 solid;
     height: 150px;
     background: url("../images/glass-logo-small.jpg") no-repeat 0px 80px;
 }
 
-header h1 {
+header#main-header h1 {
     font-family: 'LogoFont', sans-serif;
     font-size: 30pt;
     color: #606060;
@@ -44,7 +54,7 @@ header h1 {
     margin-bottom: 0px;
 }
 
-header h2 {
+header#main-header h2 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
     color: #888888;
@@ -120,4 +130,117 @@ nav#nav-menu a {
 nav#nav-menu a:hover {
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+section {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#main-news h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #DDDDDD;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#header-article h1 {
+    font-family: 'LogoFont', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.right {
+    text-align: right;
+}
+
+header#header-article h2 {
+    font-size: 13pt;
+    color: #CECECE;
+    background-color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+header#header-article h3 {
+    font-size: 12px;
+    color: #606060;
+
+}
+
+table {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td.left-column {
+    color: #FFFFFF;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table td.right-column {
+    background-color: #CECECE;
+}
+
+table caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #DDDDDD;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside h1 {
+    font-family: 'LogoFont', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer p {
+    text-align: center;
 }
