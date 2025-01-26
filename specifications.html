@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especificações | Google Glass</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/specs.css">
     <link rel="shortcut icon" href="images/specifications.png">
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <div id="div-interface">
+    <div class="div-interface">
         <header id="main-header">
             <hgroup>
                 <h1>Google Glass</h1>
@@ -40,20 +41,34 @@
             </nav>
         </header>
 
+        <section id="full-body">
+            <article id="main-news">
+                <header id="header-article">
+                    <hgroup>
+                        <h3>Glass > Especificações</h3>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="right">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                <section id="content">
+                    <img src="images/glass-marked-scheme.jpg" alt="Glass com marcações" usemap="#map">
+                    <map name="map">
+                        <area shape="rect" coords="179,202, 270,260" href="google-glass.html#article-screen" target="window" alt="Informações sobre a Tela">
+                        <area shape="circle" coords="158,243, 12" href="google-glass.html#article-camera" target="window" alt="Informações sobre a Câmera">
+                        <area shape="circle" coords="73,52, 12" href="google-glass.html#article-battery-gadgets" target="window" alt="Informações sobre a Bateria e os Gadgets">
+                        <area shape="poly" coords="28,143, 83,216, 84,249, 27,169" href="google-glass.html#article-sensors" target="window" alt="Informações sobre os Sensores">
+                    </map>
+                    <iframe src="google-glass.html" name="window" id="iframe-spec"></iframe>
+                </section>
+            </article>
+        </section>
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-
-[AQUI ENTRA UMA IMAGEM]
-
-<footer>
-    <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
-    <a href="https://facebook.com/cursosemvideo">Facebook</a> | <a href="https://twitter.com/cursosemvideo">Twitter</a></p>
-</footer>
-</div>
+        <footer>
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
+            <a href="https://facebook.com/cursosemvideo">Facebook</a> | <a href="https://twitter.com/cursosemvideo">Twitter</a></p>
+        </footer>
+    </div>
 </body>
 </html>

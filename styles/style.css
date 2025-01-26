@@ -11,7 +11,7 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
-div#div-interface {
+div.div-interface {
     width: 900px;
     background-color: #FFFFFF;
     margin: -20px auto 0px auto;
@@ -132,7 +132,7 @@ nav#nav-menu a:hover {
     text-decoration: underline;
 }
 
-section {
+section#body {
     display: block;
     width: 500px;
     float: left;
