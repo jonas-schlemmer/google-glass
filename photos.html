@@ -6,10 +6,11 @@
     <title>Fotos | Google Glass</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/photos.png">
+    <link rel="stylesheet" href="styles/photos.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <div id="div-interface">
+    <div class="div-interface">
         <header id="main-header">
             <hgroup>
                 <h1>Google Glass</h1>
@@ -21,43 +22,74 @@
             <nav id="nav-menu">
                 <h1>Menu Principal</h1>
                 <ul type="square">
-                    <li onmouseover="changePhoto('images/home.png')" onmouseout="changePhoto('images/glass-black-small.png')">
+                    <li onmouseover="changePhoto('images/home.png')" onmouseout="changePhoto('images/photos.png')">
                         <a href="index.html" target="_self">Home</a>    
                     </li>
-                    <li onmouseover="changePhoto('images/specifications.png')" onmouseout="changePhoto('images/glass-black-small.png')">
+                    <li onmouseover="changePhoto('images/specifications.png')" onmouseout="changePhoto('images/photos.png')">
                         <a href="specifications.html" target="_self">Especificações</a>
                     </li>
-                    <li onmouseover="changePhoto('images/photos.png')" onmouseout="changePhoto('images/glass-black-small.png')">
+                    <li onmouseover="changePhoto('images/photos.png')" onmouseout="changePhoto('images/photos.png')">
                         <a href="photos.html" target="_self">Fotos</a>
                     </li>
-                    <li onmouseover="changePhoto('images/multimedia.png')" onmouseout="changePhoto('images/glass-black-small.png')">
+                    <li onmouseover="changePhoto('images/multimedia.png')" onmouseout="changePhoto('images/photos.png')">
                         <a href="multimedia.html" target="_self">Multimídia</a>
                     </li>
-                    <li onmouseover="changePhoto('images/contact.png')" onmouseout="changePhoto('images/glass-black-small.png')">
+                    <li onmouseover="changePhoto('images/contact.png')" onmouseout="changePhoto('images/photos.png')">
                         <a href="contact.html" target="_self">Fale conosco</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        
+        <article id="main-news">
+            <header id="header-article">
+                <hgroup>
+                    <h3>Glass > Fotos</h3>
+                    <h1>Galeria de Imagens do Google Glass</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="right">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
 
-Glass > Fotos
-Galeria de Imagens do Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+            <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
 
-Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+            <ul id="photo-album">
+                <li id="photo-01">
+                    <span>
+                        Agenda e lembretes
+                    </span>
+                </li>
+                <li id="photo-02">
+                    <span>
+                        Sergey Brin usando o Glass
+                    </span>
+                </li>
+                <li id="photo-03">
+                    <span>
+                        Leve e compacto
+                    </span>
+                </li>
+                <li id="photo-04">
+                    <span>
+                        Sensação de uma tela de 50"
+                    </span>
+                </li>
+                <li id="photo-05">
+                    <span>
+                        Vários tipos de lente
+                    </span>
+                </li>
+                <li id="photo-06">
+                    <span>
+                        Informações importantes
+                    </span>
+                </li>
+            </ul>
 
-- Agenda e lembretes
-- Sergey Brin usando o Glass
-- Leve e compacto
-- Sensação de uma tela de 50"
-- Vários tipos de lente
-- Informações importantes
-
-<footer>
-    <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
-    <a href="https://facebook.com/cursosemvideo">Facebook</a> | <a href="https://twitter.com/cursosemvideo">Twitter</a></p>
-</footer>
-</div>
+        <footer>
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
+            <a href="https://facebook.com/cursosemvideo">Facebook</a> | <a href="https://twitter.com/cursosemvideo">Twitter</a></p>
+        </footer>
+    </div>
 </body>
 </html>
