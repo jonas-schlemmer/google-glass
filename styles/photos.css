@@ -13,9 +13,14 @@ ul#photo-album li {
     width: 200px;
     height: 200px;
     margin: 10px;
+    position: relative;
     border: 5px solid #FFFFFF;
     background-color: #FFFFFF;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transform: scale(1);
+    -webkit-transition: all .4s ease-in;
+    transform: scale(1);
+    transition: all .4s ease-in;
 }
 
 ul#photo-album li span {
@@ -30,7 +35,8 @@ ul#photo-album li span {
 
 ul#photo-album li:hover {
     -webkit-transform: scale(1.5);
-    -webkit-transition: all .4s ease-in;
+    transform: scale(1.5);
+    z-index: 1;
 }
 
 ul#photo-album li:hover span {
