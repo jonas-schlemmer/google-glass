@@ -20,28 +20,91 @@ ul#photo-album li {
 
 ul#photo-album li span {
     opacity: 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#photo-album li:hover {
+    -webkit-transform: scale(1.5);
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#photo-album li:hover span {
+    opacity: 1;
 }
 
 ul#photo-album li#photo-01 {
     background: url("../images/gallery-01.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #FFFFFF;
+}
+
+ul#photo-album li#photo-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
 
 ul#photo-album li#photo-02 {
     background: url("../images/gallery-02.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #FFFFFF;
+}
+
+ul#photo-album li#photo-02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
 
 ul#photo-album li#photo-03 {
     background: url("../images/gallery-03.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #FFFFFF;
+}
+
+ul#photo-album li#photo-03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
 
 ul#photo-album li#photo-04 {
     background: url("../images/gallery-04.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #FFFFFF;
+}
+
+ul#photo-album li#photo-04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
 
 ul#photo-album li#photo-05 {
     background: url("../images/gallery-05.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #FFFFFF;
+}
+
+ul#photo-album li#photo-05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
 
 ul#photo-album li#photo-06 {
     background: url("../images/gallery-06.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #FFFFFF;
+}
+
+ul#photo-album li#photo-06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
