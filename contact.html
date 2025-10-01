@@ -76,7 +76,7 @@
                 <legend>Identificação do Usuário</legend>
                 <p>
                     <label for="name">Nome: </label>
-                    <input type="text" name="input-name" id="name" size="50" maxlength="50" placeholder="Ex: João da Silva">
+                    <input type="text" name="input-name" id="name" size="50" maxlength="50" placeholder="Nome Completo">
                 </p>
 
                 <p>
@@ -86,11 +86,11 @@
 
                 <p>
                     <label for="email">E-mail: </label>
-                    <input type="email" name="input-email" id="email" size="40" maxlength="40">
+                    <input type="email" name="input-email" id="email" size="40" maxlength="40" placeholder="Separe por vírgulas">
                 </p>
 
                 <fieldset id="sex">
-                    <legend>Sexo:</legend>
+                    <legend>Sexo</legend>
                     <input type="radio" name="txt-sex" id="masculine" checked>
                     <label for="masculine">Masculino</label>
                     <br>
@@ -99,20 +99,20 @@
                 </fieldset>
 
                 <p>
-                    <label for="birthdate">Data de Nascimento</label>
+                    <label for="birthdate">Data de Nascimento:</label>
                     <input type="date" name="txt-birthdate" id="birthdate">
                 </p>
             </fieldset>
             
             <fieldset id="address">
-                <legend>Endereço do Usuário</legend>
+                <legend>Endereço</legend>
                 <p>
-                    <label for="street">Rua: </label>
-                    <input type="text" name="input-street" id="street" size="20" maxlength="20" placeholder="Ex: Avenida João da Silva">
+                    <label for="street">Logradouro</label>
+                    <input type="text" name="input-street" id="street" size="20" maxlength="20" placeholder="Rua, Av, Trav, ...">
                 </p>
 
                 <p>
-                    <label for="number">Número: </label>
+                    <label for="number">Número</label>
                     <input type="number" name="input-number" id="number" minlength="1" maxlength="4" min="1" max="9999">
                 </p>
 
@@ -152,7 +152,7 @@
 
                 <p>
                     <label for="city">Cidade: </label>
-                    <input type="text" name="input-city" id="city" maxlength="30" size="30" placeholder="Cidade" list="cities">
+                    <input type="text" name="input-city" id="city" maxlength="30" size="30" placeholder="Sua cidade" list="cities">
                     
                     <!-- Não funciona no Edge -->
                     <datalist id="cities">
@@ -166,14 +166,14 @@
             </fieldset>
             
             <fieldset id="message">
-                <legend>Mensagem do Usuário</legend>
+                <legend>Mensagem</legend>
                 <p>
-                    <label for="urgency">Urgência: </label>
+                    <label for="urgency">Grau de Urgência: </label>
                     Mín<input type="range" min="0" max="10" step="2">Máx
                 </p>
                 <p>
                     <label for="text">Mensagem: </label>
-                    <textarea name="text" id="text" cols="45" rows="8" placeholder="Deixa aqui sua mensagem"></textarea>
+                    <textarea name="text" id="text" cols="45" rows="8" placeholder="Sua mensagem..."></textarea>
                 </p>
             </fieldset>
             
@@ -181,7 +181,7 @@
                 <legend>Quero um Google Glass</legend>
                 <p>
                     <input type="checkbox" name="text-order" id="text-order">
-                    <label for="text-order">Gostaria de adquirir um Google Glass quando disponível</label>
+                    <label for="text-order">Gostaria de adquirir um Google Glass® quando disponível</label>
                 </p>
                     
                 <p>
@@ -196,7 +196,7 @@
 
                 <p>
                     <label for="price"> Preço Total: R$</label>
-                    <input type="text" name="price" id="total-price" placeholder="Total" readonly>
+                    <input type="text" name="price" id="total-price" placeholder="Total a Pagar" readonly>
                 </p>
             </fieldset>
         
@@ -205,8 +205,8 @@
         </form>
 
         <footer>
-            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
-            <a href="https://facebook.com/cursosemvideo">Facebook</a> | <a href="https://twitter.com/cursosemvideo">Twitter</a></p>
+            <p><i>&copy; Copyright 2013 - by Gustavo Guanabara<br><br>
+            <a href="https://facebook.com/cursosemvideo">Facebook</a> | <a href="https://twitter.com/cursosemvideo">Twitter</a></i></p>
         </footer>
     </div>
 </body>

@@ -35,8 +35,8 @@ a:hover {
 
 header#main-header img#icon {
     position: absolute;
-    left: 780px;
-    top: 70px;
+    left: 65rem;
+    top: 5rem;
 }
 
 header#main-header {
@@ -99,7 +99,7 @@ nav#nav-menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 35rem;
 }
 
 nav#nav-menu li {
@@ -161,10 +161,11 @@ header#header-article h1 {
 }
 
 header#header-article h2 {
-    font-size: 13pt;
+    font-size: 12pt;
     color: #CECECE;
     background-color: #FFFFFF;
-    margin-bottom: 0px;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 header#header-article h3 {
@@ -183,7 +184,6 @@ table {
 table td {
     border: 1px solid #606060;
     padding: 10px;
-    text-align: center;
     vertical-align: middle;
 }
 
@@ -192,6 +192,7 @@ table td.left-column {
     background-color: #606060;
     vertical-align: top;
     font-weight: bold;
+    text-align: right;
 }
 
 table td.right-column {
@@ -243,4 +244,8 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+#video-2 {
+    margin-top: -16px;
 }
