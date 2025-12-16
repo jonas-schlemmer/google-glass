@@ -47,3 +47,15 @@ fieldset#message {
 fieldset#order {
     background: url("../images/icon-payment.png") no-repeat 95% 95%;
 }
+
+#birthdate {
+    margin-left: 50px;
+}
+
+#sex {
+    margin-left: 50px;
+}
+
+#text {
+    margin-left: 50px;
+}

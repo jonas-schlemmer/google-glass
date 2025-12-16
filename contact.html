@@ -4,27 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco | Google Glass</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/contact.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/script.js"></script>
-    <script>
-        function calcTotal() {
-            // Faz a verificação se a quantidade é maior que zero, para não retornar NaN, para o Input
-            document.getElementById('quantity').addEventListener('input', function () {
-                let quantity = document.getElementById('quantity').value;
-                document.getElementById('total-price').value = quantity ? parseInt(quantity) * 1500 : 0;
-            });
-
-            // Faz a verificação se a quantidade é maior que zero, para não retornar NaN, para o Click
-            document.getElementById('quantity').addEventListener('click', function () {
-                let quantity = document.getElementById('quantity').value;
-                document.getElementById('total-price').value = quantity ? parseInt(quantity) * 1500 : 0;
-            });
-
-            // document.getElementById('total-price').value = parseInt(document.getElementById('quantity').value) * 1500
-        }
-    </script>
 </head>
 <body>
     <div class="div-interface">
@@ -75,18 +58,24 @@
             <fieldset id="user">
                 <legend>Identificação do Usuário</legend>
                 <p>
-                    <label for="name">Nome: </label>
-                    <input type="text" name="input-name" id="name" size="50" maxlength="50" placeholder="Nome Completo">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="input-name" id="name" size="32" maxlength="32">
+                </p>
+                
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="input-email" id="email" size="32" maxlength="32">
                 </p>
 
                 <p>
-                    <label for="password">Senha: </label>
-                    <input type="password" name="input-password" id="password" size="8" maxlength="8" placeholder="8 dígitos">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="input-password" id="password" size="12" maxlength="12">
                 </p>
 
                 <p>
-                    <label for="email">E-mail: </label>
-                    <input type="email" name="input-email" id="email" size="40" maxlength="40" placeholder="Separe por vírgulas">
+                    <label for="birthdate">Data de Nascimento:</label>
+                    <br>
+                    <input type="date" name="txt-birthdate" id="birthdate">
                 </p>
 
                 <fieldset id="sex">
@@ -96,28 +85,23 @@
                     <br>
                     <input type="radio" name="txt-sex" id="feminine">
                     <label for="feminine">Feminino</label>
-                </fieldset>
-
-                <p>
-                    <label for="birthdate">Data de Nascimento:</label>
-                    <input type="date" name="txt-birthdate" id="birthdate">
-                </p>
+                </fieldset>                
             </fieldset>
             
             <fieldset id="address">
                 <legend>Endereço</legend>
                 <p>
-                    <label for="street">Logradouro</label>
-                    <input type="text" name="input-street" id="street" size="20" maxlength="20" placeholder="Rua, Av, Trav, ...">
+                    <label for="street">Logradouro:</label>
+                    <input type="text" name="input-street" id="street" size="28" maxlength="28">
                 </p>
 
                 <p>
-                    <label for="number">Número</label>
+                    <label for="number">Número:</label>
                     <input type="number" name="input-number" id="number" minlength="1" maxlength="4" min="1" max="9999">
                 </p>
 
                 <p>
-                    <label for="state">Estado: </label>
+                    <label for="state">Estado:</label>
                     <select name="input-state" id="state">
                         <option value="0" selected>Selecione um estado</option>
                         <option value="AC">Acre</option>
@@ -151,10 +135,9 @@
                 </p>
 
                 <p>
-                    <label for="city">Cidade: </label>
-                    <input type="text" name="input-city" id="city" maxlength="30" size="30" placeholder="Sua cidade" list="cities">
+                    <label for="city">Cidade:</label>
+                    <input type="text" name="input-city" id="city" maxlength="24" size="12" list="cities">
                     
-                    <!-- Não funciona no Edge -->
                     <datalist id="cities">
                         <option value="Sapiranga"></option>
                         <option value="Campo Bom"></option>
@@ -168,12 +151,12 @@
             <fieldset id="message">
                 <legend>Mensagem</legend>
                 <p>
-                    <label for="urgency">Grau de Urgência: </label>
+                    <label for="urgency">Grau de Urgência:</label>
                     Mín<input type="range" min="0" max="10" step="2">Máx
                 </p>
                 <p>
                     <label for="text">Mensagem: </label>
-                    <textarea name="text" id="text" cols="45" rows="8" placeholder="Sua mensagem..."></textarea>
+                    <textarea name="text" id="text" cols="40" rows="6" placeholder="Deixe aqui a sua mensagem..."></textarea>
                 </p>
             </fieldset>
             
@@ -185,22 +168,22 @@
                 </p>
                     
                 <p>
-                    <label for="color">Cor: </label>
+                    <label for="color">Cor:</label>
                     <input type="color" name="color" id="color" value="#0000FF">
                 </p>
 
                 <p>
-                    <label for="quantity">Quantidade: </label>
+                    <label for="quantity">Quantidade:</label>
                     <input type="number" name="quantity" id="quantity" min="0" max="20">
                 </p>
 
                 <p>
-                    <label for="price"> Preço Total: R$</label>
-                    <input type="text" name="price" id="total-price" placeholder="Total a Pagar" readonly>
+                    <label for="price">Preço Total: R$</label>
+                    <input type="text" name="price" id="total-price" readonly>
                 </p>
             </fieldset>
         
-            <input type="image" name="Enviar" src="images/submit-button.png">
+            <input type="image" style="margin-left: 40%;" name="Enviar" src="images/submit-button.png">
 
         </form>
 
