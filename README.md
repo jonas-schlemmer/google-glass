@@ -12,9 +12,9 @@ Projeto do Curso de HTML5 do Curso em Vídeo, ministrado pelo Gustavo Guanabara 
 - exportarParaExcel.
 
 ## 🖼️ Telas
-![nomeTela](images/layout-nomeTelaIgualAoArquivo.png)
-![nomeTela](images/layout-nomeTelaIgualAoArquivo.png)
-![nomeTela](images/layout-nomeTelaIgualAoArquivo.png)
+![Home](images/layout-home.png)
+![Especificações](images/layout-specifications.png)
+![Fale Conosco](images/layout-contact.png)
 
 ## 🚀 Como Executar
 #### Acesso web:
