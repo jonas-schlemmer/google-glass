@@ -7,9 +7,9 @@ Projeto do Curso de HTML5 do Curso em Vídeo, ministrado pelo Gustavo Guanabara 
 - JavaScript.
 
 ## ✅ Funcionalidades
-- criarEditarEApagarTarefas;
-- filtrosPorColuna;
-- exportarParaExcel.
+- Interação nas especificações;
+- Vídeos e imagens sobre o Google Glass;
+- Formulário de contato.
 
 ## 🖼️ Telas
 ![Home](images/layout-home.png)
